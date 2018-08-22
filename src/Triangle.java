@@ -5,6 +5,11 @@ public class Triangle extends Shape{
 	public int height;
 	public int side1;
 	public int side2;
+	
+	Triangle(String name, int base, int height, int side1, int side2){
+		super(name);
+	}
+	
 	 @Override //Annotation
 		public void calculateArea() {
 			//Accessing Math's PI value

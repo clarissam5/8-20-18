@@ -2,6 +2,12 @@
 public class Circle extends Shape {
 
 	public int radius; 
+	
+	Circle(String name, int radius) {
+		super(name);
+		this.radius=radius; 
+	}
+	
 	 @Override //Annotation
 	public void calculateArea() {
 		//Accessing Math's PI value
@@ -18,5 +24,8 @@ public class Circle extends Shape {
 	public void draw() {
 		System.out.println("Draw Circle");
 	}
-	
+	@Override 
+	public void sayHello() {
+		System.out.println("Ola!");
+	}
 }

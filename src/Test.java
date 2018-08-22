@@ -2,7 +2,15 @@
 public class Test {
 
 	public static void main(String args[]) {
-		Shape s = new Shape();
+		
+		Circle c = new Circle("round", 5);
+		c.calculateArea();
+		c.sayHello();
+		
+		Triangle t = new Triangle();
+		t.sayHello();
+		
+		/*Shape s = new Shape();
 		Circle c = new Circle();
 		Square sq = new Square();
 		Triangle t = new Triangle();
@@ -13,12 +21,12 @@ public class Test {
 		c.radius = 8; 
 		System.out.println(c.radius);
 		s.calculateArea();
-		c.calculateArea();
+		
 		c.calculateCircumference();
 		sq.calculateArea();
 		sq.calculatePerimeter();
 		t.calculateArea();
-		t.calculatePerimeter();
+		t.calculatePerimeter();*/
 		
 		
 	}

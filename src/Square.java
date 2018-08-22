@@ -2,6 +2,11 @@
 public class Square extends Shape {
 
 	public int side;
+	
+	Square (String name, int side){
+		super(name);
+	}
+	
 	 @Override //Annotation
 		public void calculateArea() {
 			//Accessing Math's PI value

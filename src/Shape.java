@@ -1,12 +1,18 @@
-
-public class Shape {
-
-	public void calculateArea() {
-		System.out.println("In class Shape");
+//keyword add abstract
+public abstract class Shape {
+	
+	protected String name;
+	
+	Shape(String name){
+		this.name=name;
 	}
 	
-	public void draw() {
-		System.out.println("Draw Shape");
+	public void sayHello() {
+		System.out.println("Hello everyone!");
 	}
+
+	public abstract void calculateArea(); 
+	
+	public abstract void draw();
 	
 }
